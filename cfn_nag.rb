@@ -1,1 +1,0 @@
-/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/cfn_nag.rb
