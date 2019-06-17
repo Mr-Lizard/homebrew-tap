@@ -72,6 +72,7 @@ class CfnNag < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    assert_equal "0.4.14", shell_output("#{bin}/cfn_nag -v").strip
+
   end
 end
