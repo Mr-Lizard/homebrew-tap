@@ -52,7 +52,7 @@ class CfnNag < Formula
   def install
     
     ENV["GEM_HOME"] = libexec
-    ENV["VERSION"] = version
+    ENV["GEM_VERSION"] = version
     
     system "gem", "build", "cfn-nag.gemspec"
     system "gem", "install", "cfn-nag-#{version}.gem"
