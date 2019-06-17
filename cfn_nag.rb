@@ -57,7 +57,7 @@ class CfnNag < Formula
     system "gem", "build", "cfn-nag.gemspec"
     system "gem", "install", "cfn-nag-#{version}.gem"
     
-    bin.install Dir["bin/cfn-nag"]
+    bin.install Dir["bin/*"]
     #bin.env_script_all_files(libexec/"bin", :GEM_HOME => ENV["GEM_HOME"])
 
   end
@@ -73,7 +73,7 @@ class CfnNag < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    assert_equal "0.4.14", shell_output("#{bin}/cfn_nag -v").strip
+    assert_equal version, shell_output("#{bin}/cfn_nag -v").strip
 
   end
 end
