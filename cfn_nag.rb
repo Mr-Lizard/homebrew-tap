@@ -5,7 +5,7 @@ class CfnNag < Formula
 
   desc "Auditing tool for CloudFormation templates"
   homepage "https://github.com/stelligent/cfn_nag"
-  url "https://api.github.com/repos/stelligent/cfn_nag/tarball"
+  url "https://rubygems.org/gems/cfn-nag/versions/0.4.19"
   version "0.4.19"
   sha256 "b20c3b2a7a32abdfba263a95174b1b2f55480266f3f4d556bc746b611fe7e2e2"
 
@@ -74,7 +74,7 @@ class CfnNag < Formula
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     #assert_equal version, shell_output("#{bin}/cfn_nag -v").strip
-    assert_equal "0.4.15", shell_output("#{bin}/cfn_nag -v").strip
+    assert_equal "0.4.19", shell_output("#{bin}/cfn_nag -v").strip
 
   end
 end
