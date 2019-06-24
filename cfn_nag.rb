@@ -7,7 +7,7 @@ class CfnNag < Formula
   homepage "https://github.com/stelligent/cfn_nag"
   url "https://github.com/stelligent/cfn_nag/tarball/v0.4.21"
   version "0.4.21"
-  sha256 "b20c3b2a7a32abdfba263a95174b1b2f55480266f3f4d556bc746b611fe7e2e2"
+  sha256 "e3be40fac26f5a794b37bc6783cec1afa0baa24fbf587442c5ddad6535f1e792"
 
   depends_on "ruby" if MacOS.version <= :sierra
   
