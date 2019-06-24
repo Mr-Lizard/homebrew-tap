@@ -73,8 +73,10 @@ class CfnNag < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    #assert_equal version, shell_output("#{bin}/cfn_nag -v").strip
-    assert_equal "0.4.19", shell_output("#{bin}/cfn_nag -v").strip
+
+    assert_equal "0.4.21", shell_output("#{bin}/cfn_nag -v").strip
+    assert_equal "0.4.21", shell_output("#{bin}/cfn_nag_scan -v").strip
+    #assert_equal "0.4.21", shell_output("#{bin}/cfn_nag_rules -v").strip
 
   end
 end
