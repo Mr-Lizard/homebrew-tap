@@ -78,8 +78,6 @@ class CfnNag < Formula
     assert_equal version, shell_output("#{bin}/cfn_nag_scan -v").strip
     assert_equal version, shell_output("#{bin}/cfn_nag_rules -v").strip
     
-    # REMOVE...REMOVE...REMOVE...
-    assert_equal version, "0.4.22"
-
   end
+
 end
