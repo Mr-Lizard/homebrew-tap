@@ -49,7 +49,7 @@ class CfnNag < Formula
     system "gem", "install", "cfn-nag"
     
     bin.install Dir["bin/*"]
-    #bin.env_script_all_files(libexec/"bin", :GEM_HOME => ENV["GEM_HOME"])
+    bin.env_script_all_files(libexec/"bin", :GEM_HOME => ENV["GEM_HOME"])
 
   end
 
